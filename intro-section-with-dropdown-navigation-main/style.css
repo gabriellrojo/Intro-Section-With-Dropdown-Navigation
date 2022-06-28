@@ -1,0 +1,28 @@
+#logo{
+    margin-right: 50px;
+}
+
+.dropdown, 
+.nav-item{
+    margin-right: 30px;
+}
+
+#login{
+    margin-left: 450px;
+}
+
+#register{
+    border: 2px solid #CCC;
+    border-radius: 20px;
+    padding: 7px 20px;
+}
+
+main{
+    margin: 50px 135px
+}
+
+.imagem-principal{
+    height: 75vh;
+    margin-left: 100%;
+    transform: translateX(-100%);
+}
