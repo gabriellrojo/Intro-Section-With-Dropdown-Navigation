@@ -10,6 +10,14 @@ nav{
     height: 8vh;
     display: flex;
     align-items: center;
+    justify-content:space-between;
+    
+    
+}
+
+.display-mobile, .menu-fechar{
+    cursor: pointer;
+    display: none
 }
 
 .img-logo{
@@ -31,10 +39,10 @@ nav{
 .list1, .list2{
     position: absolute;
     flex-direction: column;
-    margin: 0 -15px;
+    margin: 0px -15px;
     background-color: rgb(243, 243, 243);
     width: 20%;
-    padding: 10px
+    padding: 10px;
 }
 
 .features {
@@ -55,20 +63,24 @@ li a:hover{
     color: black
 }
 
+.p-list{
+    margin-left: 30px;
+    margin-top: -20px
+}
+
 .list1 li, 
 .list2 li{
     list-style: none;
-    margin-left: 0;
     margin: 15px 10px
 }
 
 .login{
     margin-left: auto;
-    margin-right: 30px;
+    
 }
 
 .register{
-    margin-right: 50px;
+    margin-right: 80px;
     color: rgb(109, 108, 108);
     border: 2px solid #CCC;
     padding: 10px;
@@ -154,8 +166,282 @@ main{
     grid-row: 1/4;
     height: 70vh;
     margin-left: 100px;
-    margin-top: 50px;
+    margin-top: 50px;   
     
+}
+
+.img-principal-mobile{
+    display: none
+}
+
+@media (max-width: 915px){
+
+    .display-mobile{
+        display: flex;
+        margin-left: auto;
+        margin-right: 40px;
+    }
+
+    .nav-list{
+        position: fixed;
+        right: -100%;
+        top: 8vh;
+        width: 40vw;
+        height: 100vh;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: rgb(243, 243, 243);
+        justify-content: space-evenly;
+        
+    }
+
+    .features{
+        margin: 0 25px;
+        margin-bottom: -70px;
+        margin-top: -70px;
+    }
+
+    .company,
+    .career{
+        margin-bottom: -70px;
+    }
+
+    .about{
+        margin-top: -70px
+    }
+
+
+    .login{
+       margin-left: 25px;
+       margin-bottom: -70px;
+       margin-top: -70px;
+       
+   }
+
+    .register{
+        margin-left: -10px;
+        margin-top: -20px;
+        padding: 13px 33px;
+    }
+
+    .list1, .list2{
+        background-color: rgb(243, 243, 243);
+        width: 80%;
+        padding: 30px;
+        border: 1px solid rgb(177, 175, 175);
+        border-radius: 20px
+    }
     
+    li a{
+        color: rgb(109, 108, 108);
+        text-decoration: none;
+        font-size: 25px;
+    }
     
+
+    .nav-list.active{
+        right: 0
+    }
+
+    .menu-fechar .active{
+        display: flex
+    }
+
+    main{
+        display: inline;
+        margin: 0
+    }
+
+    .img-principal{
+        display: inline-block;
+        position: absolute;
+        top: 8vh;
+        height: 60vh;
+        margin-left: -450px;
+        z-index:-1
+
+    }
+
+    .titulo{
+        margin-top: 950px;
+        text-align: center;
+    }
+
+    .texto{
+        text-align: center;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    .botao{
+        margin-left: 350px;
+        margin-bottom: 30px;
+        
+    }
+    
+    .container-img{
+        display: none
+    }
+    
+
+}
+
+@media (max-width: 865px){
+
+
+    .img-principal{
+        display: inline-block;
+        position: absolute;
+        top: 8vh;
+        height: 60vh;
+        margin-left: -370px;
+        z-index:-2
+
+    }
+
+    .titulo{
+        margin-top: 800px;
+        text-align: center;
+    }
+
+    .texto{
+        text-align: center;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 30px
+    }
+
+    .botao{
+        margin-left: 300px;
+        margin-bottom: 50px;
+        
+    }
+    
+
+}
+
+@media (max-width: 700px){
+    .img-principal{
+        height: 65vh;
+        position: absolute;
+        margin-left: -250px;
+    }
+
+    .list1 li, 
+    .list2 li{
+        list-style: none;
+        margin: 15px -30px
+    }
+
+    .titulo{
+        margin-top: 550px;
+        width: 85%;
+        margin-left: 50px;
+    }
+
+    .texto{
+        width: 60%;
+        margin-left: 130px
+    }
+
+    .botao{
+        margin-left: 220px;
+    }
+
+}
+
+@media (max-width: 500px){
+
+    .img-principal{
+        height: 50vh;
+        position: absolute;
+        margin-left: -230px;
+    }
+
+    .list1, .list2{
+        background-color: rgb(243, 243, 243);
+        width: 90%;
+        padding: 40px;
+        border: 1px solid rgb(177, 175, 175);
+        border-radius: 20px
+    }
+
+    .display-mobile{
+        display: flex;
+        margin-left: auto;
+    }
+
+    li a{
+        color: rgb(109, 108, 108);
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+
+    .titulo{
+        margin-top: 550px;
+        margin-left: 30px
+    }
+
+    .texto{
+        width: 60%;
+        margin-left: 80px
+    }
+
+    .botao{
+        margin-left: 160px;
+    }
+
+    
+}
+
+@media (max-width: 400px){
+
+    .img-principal{
+        display: inline-block;
+        position: absolute;
+        height: 50vh;
+        top: 6vh;
+        margin-left: -200px;
+        margin-top: 100px;
+        z-index: -1
+    }
+
+    .titulo{
+        margin-top: 550px;
+    }
+
+    .texto{
+        width:50%;
+        margin-left: 90px;
+    }
+
+    .botao{
+        margin-left: 140px;
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width: 300px){
+
+    .img-principal{
+        margin-left: -160px
+    }
+
+    .titulo{
+        margin-top: 450px;
+        margin-left: 20px;
+    }
+
+    .texto{
+        width:50%;
+        margin-left: 70px;
+    }
+
+    .botao{
+        margin-left: 105px;
+        margin-bottom: 20px
+    }
 }

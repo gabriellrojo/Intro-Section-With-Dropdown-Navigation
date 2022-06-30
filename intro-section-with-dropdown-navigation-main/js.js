@@ -25,3 +25,16 @@ company.addEventListener("click", (e) => {
         list2.style.display = "none"
     }
 })
+
+const botao = document.querySelector(".display-mobile")
+const botaoFechar = document.querySelector(".menu-fechar")
+const navList = document.querySelector(".nav-list")
+
+botao.addEventListener("click", (e) => {
+    e.preventDefault()
+    navList.classList.toggle("active")
+    
+    
+
+})
+
