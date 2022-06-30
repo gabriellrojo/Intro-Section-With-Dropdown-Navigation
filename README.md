@@ -1,2 +1,2 @@
 # Intro-Section-With-Dropdown-Navigation
- Construção da página inicial de um site utilizando o Bootstrap 5
+ Construção da página inicial de um site.
