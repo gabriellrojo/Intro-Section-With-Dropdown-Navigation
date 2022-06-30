@@ -221,13 +221,15 @@ main{
     .register{
         margin-left: -10px;
         margin-top: -20px;
-        padding: 13px 33px;
+        padding: 17px 39px;
+        font-size: 25px;
+
     }
 
     .list1, .list2{
         background-color: rgb(243, 243, 243);
-        width: 80%;
-        padding: 30px;
+        width: 90%;
+        padding: 40px;
         border: 1px solid rgb(177, 175, 175);
         border-radius: 20px
     }
@@ -247,7 +249,7 @@ main{
         display: flex
     }
 
-    main{
+    .principal{
         display: inline;
         margin: 0
     }
@@ -392,6 +394,10 @@ main{
 
     .botao{
         margin-left: 160px;
+    }
+
+    .register{
+        font-size: 20px;
     }
 
     

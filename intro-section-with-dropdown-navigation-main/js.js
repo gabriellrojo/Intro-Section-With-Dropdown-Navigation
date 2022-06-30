@@ -27,12 +27,13 @@ company.addEventListener("click", (e) => {
 })
 
 const botao = document.querySelector(".display-mobile")
-const botaoFechar = document.querySelector(".menu-fechar")
 const navList = document.querySelector(".nav-list")
+const main = document.querySelector(".principal")
 
 botao.addEventListener("click", (e) => {
     e.preventDefault()
     navList.classList.toggle("active")
+    main.classList.toggle("active")
     
     
 
